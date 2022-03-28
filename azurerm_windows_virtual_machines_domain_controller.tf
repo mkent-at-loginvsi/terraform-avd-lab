@@ -62,7 +62,7 @@ resource "azurerm_virtual_machine_extension" "region1-dc01-basesetup" {
   settings = <<SETTINGS
     {
         "fileUris": [
-          "https://raw.githubusercontent.com/jakewalsh90/Terraform-Azure/main/Azure-DevOps-WVD/Single-Region-BaseLab/PowerShell/baselab_DCSetup.ps1"
+          "https://raw.githubusercontent.com/mkent-at-loginvsi/terraform-avd-lab/main/Powershell/DCSetup.ps1"
         ]
     }
   SETTINGS
@@ -84,7 +84,7 @@ resource "azurerm_virtual_machine_extension" "region1-dc01-domainsetup" {
   settings = <<SETTINGS
     {
         "fileUris": [
-          "https://raw.githubusercontent.com/jakewalsh90/Terraform-Azure/main/Azure-DevOps-WVD/Single-Region-BaseLab/PowerShell/DomainSetup.ps1"
+          "https://raw.githubusercontent.com/mkent-at-loginvsi/terraform-avd-lab/main/Powershell/DomainSetup.ps1"
         ]
     }
   SETTINGS
