@@ -1,4 +1,3 @@
-$password = ConvertTo-SecureString '__domain_password__' -AsPlainText -Force
 Import-Module ADDSDeployment
 Install-ADDSForest `
 -CreateDnsDelegation:$false `
@@ -11,5 +10,4 @@ Install-ADDSForest `
 -LogPath "E:\windows\NTDS" `
 -NoRebootOnCompletion:$false `
 -SysvolPath "E:\windows\SYSVOL" `
--Force:$true `
--SafeModeAdministratorPassword: $password
+-Force:$true
